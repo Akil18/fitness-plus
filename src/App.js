@@ -6,12 +6,18 @@ import logo from './logo.jpg';
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch(`api_data.json`)
       .then(res => res.json())
       .then(data => setProducts(data))
   }, [])
+
+  const addToCart = (product) => {
+    const newCart = [...cart, product];
+    setCart(newCart);
+  }
 
   return (
     <div className="App">
@@ -24,13 +30,14 @@ function App() {
               {
                 products.map(product => <Product 
                   key={product.id}
-                  product={product} 
+                  product={product}
+                  addToCart={addToCart}
                   ></Product>)
               }
           </div>
       </div>
       <div className='cart-container'>
-          <Cart></Cart>
+          <Cart cart={cart}></Cart>
       </div>
     </div>
   );

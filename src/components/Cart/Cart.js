@@ -1,12 +1,18 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Cart.css';
 import Break from '../Break/Break';
 
-const Cart = () => {
-    const [breaks, setBreaks] = useState([60, 120, 240, 360]);
+const Cart = ({cart}) => {
+    const breaks = [60, 120, 240, 360];
+    const [breakTime, setBreakTime] = useState(60);
+    const total = cart.reduce((total, product) => total + product.time, 0);
+
+    const handleBreak = (time) => {
+        setBreakTime(time);
+    }
 
     return (
-        <div>
+        <div className='cart'>
             <h2>John Doe</h2>
           <div className='user-info'>
               <h4>H: 6ft</h4>
@@ -16,15 +22,15 @@ const Cart = () => {
           <h3>Add A Break</h3>
           <div className='break-section'>
               {
-                breaks.map(breakTime => <Break key={breakTime} break={breakTime}></Break>)
+                breaks.map(breakTime => <Break key={breakTime} break={breakTime} handleBreak={handleBreak}></Break>)
               }
           </div>
           <h3>Exercise Details</h3>
           <div className='user-info'>
-              <p>Excercise time:</p>
+              <p>Excercise time: {total} minutes</p>
           </div>
           <div className='user-info'>
-              <p>Excercise time:</p>
+              <p>Break time: {breakTime} seconds</p>
           </div>
         </div>
     );
