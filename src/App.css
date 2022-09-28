@@ -1,3 +1,14 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
 }
