@@ -1,37 +1,37 @@
 [
     {
       "id": "63347d71e32d9eed0cca66b5",
-      "name": "Pushups",
+      "productName": "Pushups",
       "picture": "https://images.unsplash.com/photo-1598971457999-ca4ef48a9a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       "time": 29
     },
     {
       "id": "63347d71844f6030ab0bc849",
-      "name": "Pullups",
+      "productName": "Pullups",
       "picture": "https://images.unsplash.com/photo-1597452329152-52f9eee96576?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80",
       "time": 28
     },
     {
       "id": "63347d71f1ab8990447b7808",
-      "name": "Squats",
+      "productName": "Squats",
       "picture": "https://images.unsplash.com/photo-1541600383005-565c949cf777?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "time": 21
     },
     {
       "id": "63347d71929c9963f32792b4",
-      "name": "Bench Press",
+      "productName": "Bench Press",
       "picture": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "time": 40
     },
     {
       "id": "63347d714383003c40c115d0",
-      "name": "Dumbbell Curl",
+      "productName": "Dumbbell Curl",
       "picture": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "time": 27
     },
     {
       "id": "63347d715d88bab6c155916b",
-      "name": "Cardio",
+      "productName": "Cardio",
       "picture": "https://images.unsplash.com/photo-1608138278545-366680accc66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "time": 24
     }

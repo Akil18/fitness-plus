@@ -1,3 +1,19 @@
 .picture {
-  width: 200px;
+  width: 400px;
+  max-height: 267px;
+}
+
+.card {
+  border: 1px solid #ccc;
+}
+
+.btn-add {
+  background-color: #0033cc;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }

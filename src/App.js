@@ -23,7 +23,7 @@ function App() {
               {
                 products.map(product => <Product 
                   key={product.id}
-                  picture={product.picture}  
+                  product={product} 
                   ></Product>)
               }
           </div>
