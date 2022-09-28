@@ -1,0 +1,14 @@
+.item {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: none;
+  width: 100%;
+}
+
+.item:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
