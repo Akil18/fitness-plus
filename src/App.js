@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Cart from './components/Cart/Cart';
 import Product from './components/Product/Product';
@@ -19,6 +21,16 @@ function App() {
     setCart(newCart);
   }
 
+  const notify = () => toast('💪🏼 Good session!', {
+        position: "bottom-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+
   return (
     <div className="App">
       <div className='main-section'>
@@ -37,8 +49,19 @@ function App() {
           </div>
       </div>
       <div className='cart-container'>
-          <Cart cart={cart}></Cart>
+          <Cart notify={notify} cart={cart}></Cart>
       </div>
+      <ToastContainer 
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+      />
     </div>
   );
 }

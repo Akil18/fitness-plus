@@ -17,3 +17,18 @@
   display: flex;
   margin: 0px 30px;
 }
+
+.completed {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 20px 56px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.completed:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

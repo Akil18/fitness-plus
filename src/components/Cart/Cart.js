@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Cart.css';
 import Break from '../Break/Break';
 
-const Cart = ({cart}) => {
+const Cart = ({cart, notify}) => {
     const breaks = [60, 120, 240, 360];
     const [breakTime, setBreakTime] = useState(60);
     const total = cart.reduce((total, product) => total + product.time, 0);
@@ -32,6 +32,7 @@ const Cart = ({cart}) => {
           <div className='user-info'>
               <p>Break time: {breakTime} seconds</p>
           </div>
+          <button onClick={() => notify()} className='completed'>Activity Completed</button>
         </div>
     );
 };
