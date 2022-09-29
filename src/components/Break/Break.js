@@ -3,7 +3,7 @@ import './Break.css'
 
 const Break = (props) => {
     return (
-        <button onClick={() => props.handleBreak(props.break)} className='item'>
+        <button className='item' onClick={(event) => props.handleBreak(props.break, event)}>
             {props.break}s
         </button>
     );

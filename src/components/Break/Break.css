@@ -12,3 +12,11 @@
   color: black;
   border: 1px solid black;
 }
+
+.btn-activated {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+}

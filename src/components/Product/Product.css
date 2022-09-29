@@ -4,8 +4,11 @@
 }
 
 .card {
-  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
   width: 350px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-add {

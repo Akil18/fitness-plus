@@ -47,6 +47,14 @@ function App() {
                   ></Product>)
               }
           </div>
+          <div className='q-and-a'>
+              <h2>Q: How does React work?</h2>
+              <p>A: </p>
+              <h2>Q: Difference between props and state</h2>
+              <p>A: </p>
+              <h2>Q: Why do we use useEffect other than loading data?</h2>
+              <p>A: </p>
+          </div>
       </div>
       <div className='cart-container'>
           <Cart notify={notify} cart={cart}></Cart>
