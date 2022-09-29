@@ -16,14 +16,18 @@ function App() {
       .then(data => setProducts(data))
   }, [])
 
-  const addToCart = (product) => {
+  const addToCart = (product, event) => {
     const newCart = [...cart, product];
     setCart(newCart);
+    event.target.classList.add('btn-added');
+    event.target.childNodes[0].data = 'Added ';
+    event.target.childNodes[1].classList.remove('hide');
+    event.target.childNodes[1].innerText = parseInt(event.target.childNodes[1].innerText) + 1;
   }
 
   const notify = () => toast('💪🏼 Good session!', {
         position: "bottom-right",
-        autoClose: 5000,
+        autoClose: 2500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -49,11 +53,17 @@ function App() {
           </div>
           <div className='q-and-a'>
               <h2>Q: How does React work?</h2>
-              <p>A: </p>
+              <p>
+                React is declarative, efficient and flexible in nature. It is made up of multiple components that work independently so it is flexible when only the data of a single component needs to be changed. The rendering is efficient in that case. Also, components can be nested inside other components to build a complex applications while maintaining an internal state of its own.
+              </p>
               <h2>Q: Difference between props and state</h2>
-              <p>A: </p>
+              <p>
+                Props are used to pass data from one component to another while state is used to store data within a component. Props are immutable while state is mutable. Props are passed from parent to child while state is managed within the component. Props are read-only while state is not.
+              </p>
               <h2>Q: Why do we use useEffect other than loading data?</h2>
-              <p>A: </p>
+              <p>
+                useEffect is used to perform side effects in functional components. Besides data fetching, it can be used to run after the initial render any new updates. It can also be used to clean up the previous effects before running the next effects.
+              </p>
           </div>
       </div>
       <div className='cart-container'>

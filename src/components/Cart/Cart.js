@@ -5,7 +5,7 @@ import { addtoDb } from '../../utilities/storeDb';
 
 const Cart = ({cart, notify}) => {
     const breaks = [60, 120, 240, 360];
-    const [breakTime, setBreakTime] = useState(60);
+    const [breakTime, setBreakTime] = useState(0);
     const total = cart.reduce((total, product) => total + product.time, 0);
 
     const handleBreak = (time, event) => {
@@ -27,9 +27,18 @@ const Cart = ({cart, notify}) => {
         <div className='cart'>
             <h2 className='user'>John Doe</h2>
           <div className='user-info'>
-              <h4>H: 6ft</h4>
-              <h4>W: 75kg</h4>
-              <h4>A: 24yrs</h4>
+                <div className='info'>
+                    <small>Weight:</small>
+                    <h1>75<span className='lighter'> kg</span></h1>
+                </div>
+                <div className='info'>
+                    <small>Height:</small>
+                    <h1>6<span className='lighter'> ft</span></h1>
+                </div>
+                <div className='info'>
+                    <small>Age:</small>
+                    <h1>24<span className='lighter'> yrs</span></h1>
+                </div>
           </div>
           <h3>Add A Break</h3>
           <div className='break-section'>

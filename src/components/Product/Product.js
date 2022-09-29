@@ -8,7 +8,10 @@ const Product = ({product, addToCart}) => {
             <img className='picture' src={picture} alt={productName} />
             <h2>{productName}</h2>
             <h4>Time: {time} minutes</h4>
-            <button onClick={() => addToCart(product)} className='btn-add'>Add to List</button>
+            <button className='btn-add' onClick={(event) => addToCart(product, event)}>
+                Add to List
+                <span className='hide number'> 0</span>
+            </button>
         </div>
     );
 };
