@@ -1,6 +1,6 @@
 .cart {
   position: sticky;
-  top: 0px;
+  top: 20px;
 }
 .user-info {
   background-color: gray;
@@ -19,7 +19,7 @@
 }
 
 .completed {
-  background-color: black;
+  background-color: #303030;
   border: none;
   color: white;
   padding: 20px 56px;

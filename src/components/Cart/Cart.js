@@ -13,7 +13,7 @@ const Cart = ({cart, notify}) => {
 
     return (
         <div className='cart'>
-            <h2>John Doe</h2>
+            <h2 className='user'>John Doe</h2>
           <div className='user-info'>
               <h4>H: 6ft</h4>
               <h4>W: 75kg</h4>

@@ -4,7 +4,7 @@ import './Break.css'
 const Break = (props) => {
     return (
         <button onClick={() => props.handleBreak(props.break)} className='item'>
-            {props.break}
+            {props.break}s
         </button>
     );
 };
